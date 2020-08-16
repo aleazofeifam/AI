@@ -1,0 +1,31 @@
+[import](common.lg)
+
+# SendActivity_266608()
+- ${GreetingReply()}
+# SendActivity_771838()
+- ```Hola de nuevo. Recuerda que te puedo ayudar con los siguientes temas:
+
+- Informacion sobre Microsoft Teams. 
+- Informacion sobre tu institucion u alguna otra que desees saber.
+- Informacion sobre las herramientas de Office 365 que dispones.  
+
+En caso de que necesites mas ayuda o creas que el robot no te esta ayudando por favor escribele un mensaje por Teams **alazofei@microsoft.com**
+``` 
+
+
+
+# SendActivity_m0AoO2()
+- ${ListaDeTemasPrincipales()}
+# QnAMakerDialog_NoAnswer_284337()
+- Disculpa, no entendi tu mensaje. Puedes escribir **Ayuda** para ver mas informacion
+
+# SendActivity_meKRbI()
+- ${ListaDePreguntasDeTeams()}
+# SendActivity_25lTes()
+- ${ListaDeTemasDeO365()}
+
+
+# SendActivity_CP9vTR()
+- Si quieres encontrar informacion acerca de la institucion que laboras u otra por favor escribe **Informacion de** *nombre del colegio*
+# SendActivity_wBY2IF()
+- ${CrearCanales()}

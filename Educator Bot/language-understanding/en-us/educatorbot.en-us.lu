@@ -1,0 +1,49 @@
+> See https://aka.ms/lu-file-format to learn about supported LU concepts.
+
+> Help intent and its utterances
+
+# Help
+- help
+- Ayuda
+- Necesito ayuda
+- Mas informacion
+
+
+# MenuDeTeams
+- Ayuda con Teams
+- Necesito Teams
+- Microsoft Teams
+- Teams
+- Ocupo ayuda con Teams
+
+# MenuDeOffice
+- Office 365
+- Que puedo hacer con Office
+- O365
+- Office 
+
+# MenuDeEscuelas
+- Escuela
+- Escuelas
+- Colegio
+- Colegios
+- Institucion
+- Instituciones 
+
+
+# CrearCanales
+- Canales
+- Canal
+- Channel
+- Channels
+-  canales
+- Generar canales
+
+# PreguntasDeTeams
+> add some example phrases to trigger this intent:
+> - please tell me the weather
+> - what is the weather like in {city=Seattle}
+
+> entity definitions:
+> @ ml city
+- Hacer grupos

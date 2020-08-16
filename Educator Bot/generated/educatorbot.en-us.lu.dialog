@@ -1,0 +1,7 @@
+{
+    "$kind": "Microsoft.LuisRecognizer",
+    "id": "LUIS_educatorbot",
+    "applicationId": "=settings.luis.educatorbot_en_us_lu",
+    "endpoint": "=settings.luis.endpoint",
+    "endpointKey": "=settings.luis.endpointKey"
+}

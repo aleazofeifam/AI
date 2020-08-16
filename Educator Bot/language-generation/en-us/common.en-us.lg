@@ -1,0 +1,136 @@
+> To learn more about the LG file format, read the documentation at
+> https://aka.ms/lg-file-format
+
+
+> To learn more about the LG file format, read the documentation at
+> https://aka.ms/lg-file-format
+
+> ##Saludos
+#GreetingReply
+- ${GreetingPrefix()} ${timeOfDayGreeting()}. ${WhoAmI()}. 
+- ${GreetingPrefix()} ${SaludosCordiales()}. ${WhoAmI()}.  
+
+
+#GreetingPrefix
+- Hola!
+- Hello!
+- Kon'nichiwa!
+
+# timeOfDayGreeting
+- IF: ${timeOfDay == 'morning'}
+    -Buenos dias
+- ELSE:
+    - Buenas tardes
+
+# TiempoDeSaludo
+-IF: ${timeOfDay == 'morning'}
+    - Buenos dias
+- ELSEIF: ${timeOfDay == 'morning'}
+    - Buenas tardes
+- ELSE:
+    - Buenas noches
+
+ #SaludosCordiales
+ - Espero que se encuentre muy bien
+ - Espero que estes pasando un exelente dia
+  
+#WhoAmI
+- Mi nombre es GrahamBot y mi funcion principal es ayudarte a usar la plataforma de Microsoft Teams y contestarte preguntas al respecto
+- Me llamo GrahamBot y mi funcion principal es ayudarte a darle un gran uso a Microsoft Teams y contestarte preguntas al respecto
+
+
+> ##Lista de opciones principales
+
+#ListaDeTemasPrincipales
+- ``` Te puedo brindar ayudar en los siguientes temas:
+- Informacion sobre Microsoft Teams. 
+- Informacion sobre tu institucion u alguna otra que desees saber.
+- Informacion sobre las herramientas de Office 365 que dispones. 
+```
+
+
+#ListaDePreguntasDeTeams
+- ``` Encantado de ayudarte a utilizar de la mejor manera Microsoft Teams. Esta es una lista de areas en las que te puedo ayudar:
+- Creando Equipo para cada una de tus clases u organizacion deseada
+- Creando Canales dentro de cada uno de tus Equipos.
+- Creando Chats grupales o individuales.
+- Haciendo video conferencias y agendado las sesiones o llamadas con las personas deseadas.
+- Dantode una guia de como grabar las sesiones y compartirla una vez finalizada la llamada
+- Como hacer examenes desde esta plataforma?
+- Como puedo crear formularios o encuestas?
+-  Como puedo agendar reuniones?
+- Como puedo hacer pequenos grupos dentro de la llamada? (Breakout rooms)
+- Como crear asignaturas para los estudiantes?
+- Cual son los estudiantes de cada grupo que tengo asignado?
+- Mas detalles sobre el centro educativo en el cual laboro. 
+- Como puedo hacer sesiones en vivo
+``` 
+
+#ListaDeTemasDeO365
+- ``` Encantado de ayudarte a utilizar de la mejor manera las herramientas de Office 365, te van a encantar. Esta es una lista servicios que puedes utilizar:
+- Creando un formulario o cuestionario y compartirlo con las personas seleccionadas.
+-  One Drive
+- One Note
+- PowerPoint
+- Word
+- Stream
+- Planner
+- Whiteboard
+- Planner
+``` 
+
+# cardActionTemplate(type, title, value)
+[CardAction
+    Type = ${if(type == null, 'imBack', type)}
+    Title = ${title}
+    Value = ${value}
+    Text = ${title}
+]
+
+
+> ##Tarjetas de Teams
+
+#CrearCanales
+[ThumbnailCard
+    title = Crear canales 
+    subtitle = Video tutorial
+    text = En el siguiente video  podras tener una guia detallada de como puedes crear Canles en Teams 
+    buttons = ${cardActionTemplate('signin', 'Enlace al video', 'https://www.youtube.com/')}
+]
+
+#CrearEquipos
+[ThumbnailCard
+    title = Crear canales 
+    subtitle = Video tutorial
+    text = En el siguiente video  podras tener una guia detallada de como puedes crear Canles en Teams 
+    buttons = ${cardActionTemplate('signin', 'Enlace al video', 'https://www.youtube.com/')}
+]
+
+#CrearChats
+[ThumbnailCard
+    title = Crear canales 
+    subtitle = Video tutorial
+    text = En el siguiente video  podras tener una guia detallada de como puedes crear Canles en Teams 
+    buttons = ${cardActionTemplate('signin', 'Enlace al video', 'https://www.youtube.com/')}
+]
+
+#CrearVideoConferencias
+[ThumbnailCard
+    title = Crear canales 
+    subtitle = Guia por medio de un video para poder crear canales
+   text = En el siguiente video  podras tener una guia detallada de como puedes crear Canles en Teams 
+    buttons = ${cardActionTemplate('signin', 'Enlace al video', 'https://www.youtube.com/')}
+]
+
+
+
+> ##Tarjetas de Office
+
+#HacerPresentacionesEnPPT
+[ThumbnailCard
+    title = Hacer presentaciones en PowerPoint
+    subtitle = Guia por medio de un video para poder presentaciones creativas en PowerPoint
+    text = En el siguiente video  podras tener una guia detallada de como puedes crear Canles en Teams 
+    buttons = ${cardActionTemplate('signin', 'Enlace al video', 'https://www.youtube.com/')}
+]
+

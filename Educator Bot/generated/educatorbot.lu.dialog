@@ -1,0 +1,8 @@
+{
+    "$kind": "Microsoft.MultiLanguageRecognizer",
+    "id": "LUIS_educatorbot",
+    "recognizers": {
+        "en-us": "educatorbot.en-us.lu",
+        "": "educatorbot.en-us.lu"
+    }
+}
